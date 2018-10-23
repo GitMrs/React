@@ -1,0 +1,26 @@
+// @color:#999;
+@import './default.less';
+.container{
+    display: flex;
+    .nav_left{
+        width: 15%;
+        min-width: 200px;
+        height: calc(100vh);
+        background: @colorR;
+        .logo{
+            text-align: center;
+            vertical-align: middle;
+            padding: 30px 0;
+        }
+    }
+    .main{
+        flex: 1;
+        height: calc(100vh);
+        background: @colorF;
+        overflow: auto;
+        .content{
+            position: relative;
+            padding: 20px;
+        }
+    }
+}
